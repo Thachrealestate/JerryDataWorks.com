@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerry Mai Nguyen - Data Analyst</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 6rem 2rem 4rem;
+            position: relative;
+            text-align: center;
+        }
+
+        .profile-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .header-content {
+            text-align: left;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 100px auto 0;
+            padding: 2rem;
+            position: relative;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            margin: 3rem 0;
+            padding: 2rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            font-size: 2.2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #3498db;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-item {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-3px);
+            background: #e8f4fc;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #3498db;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #3498db;
+        }
+
+        @media (max-width: 768px) {
+            .profile-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header {
+                padding: 4rem 1rem 2rem;
+            }
+            
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .container {
+                margin-top: -80px;
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="profile-container">
+            <!-- Replace 'profile.jpg' with your actual image file -->
+            <img src="jerry.jpeg" alt="Jerry Mai Nguyen" class="profile-img">
+            <div class="header-content">
+                <h1>Jerry Mai Nguyen</h1>
+                <p style="font-size: 1.2rem; color: #ecf0f1;">Data Analyst</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com"><i class="fab fa-github"></i></a>
+                    <a href="https://medium.com"><i class="fab fa-medium"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>About Me</h2>
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+                Data Analyst with 3+ years of experience in transforming complex datasets into actionable insights. 
+                Specialized in predictive modeling, data visualization, and business intelligence solutions. 
+                Certified in Tableau, Power BI, and Google Analytics. Fluent in Python, SQL, and R. 
+                Passionate about helping organizations leverage data for strategic decision-making.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL & NoSQL</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Tableau</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Power BI</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Machine Learning</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Big Data</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Featured Projects</h2>
+            <div class="project-card">
+                <h3>📈 Sales Performance Dashboard</h3>
+                <p class="project-meta">Power BI | SQL | Azure</p>
+                <p>Developed an interactive dashboard tracking KPIs across 15+ regions, resulting in 20% improvement in sales reporting efficiency.</p>
+            </div>
+            <div class="project-card">
+                <h3>🤖 Customer Churn Prediction</h3>
+                <p class="project-meta">Python | Scikit-learn | XGBoost</p>
+                <p>Built machine learning model with 89% accuracy predicting customer churn, implemented in production saving $1.2M annually.</p>
+            </div>
+            <div class="project-card">
+                <h3>🚚 Supply Chain Optimization</h3>
+                <p class="project-meta">Python | Optimization Algorithms</p>
+                <p>Reduced logistics costs by 15% through data-driven route optimization and inventory management solutions.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Contact</h2>
+            <a href="mailto:Maijerry216@gmail.com" class="contact-button">
+                <i class="fas fa-envelope"></i>
+                Let's Connect
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Jerry Mai Nguyen. All rights reserved.</p>
+        <div class="social-links">
+            <a href="mailto:Maijerry216@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
